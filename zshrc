@@ -1,8 +1,18 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Set Variables
+# # Syntax highlight for man pages using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# Add Locations to $PATH Variable
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/us3r/.oh-my-zsh"
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -113,6 +123,8 @@ alias ni='nvim ~/.config/nvim/init.vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # #Write Handy Functions
-# function mkcd() {
-#   mkdir -p "$@" && cd "$_";
-#}
+function mkcd() {
+  mkdir -p "$@" && cd "$_";
+}
+
+
