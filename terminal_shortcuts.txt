@@ -1,0 +1,25 @@
+==================
+Terminal Shortcuts
+==================
+
+Ctrl-Alt T - Open Terminal
+Ctrl D - Close terminal
+Ctrl C - End currently running command
+Ctrl l - Clear screen
+
+Ctrl a - Cursor to beginning of line
+Ctrl e - Cursor to End of Line
+Ctrl f - Cursor fwd by one char
+Ctrl b - Cursor bkwd one char
+Ctrl d - Delete char at cursor
+Ctrl t - Exchange current 
+Ctrl u - Erases complete line
+
+
+Alt f  - Cursor fwd by one word
+Alt b - Cursor bkwd one char
+Alt t - Exchange current word with preceding one
+Alt l - Move cursor back one char
+Alt u - Convert chars of word to lowercase from cursor
+Alt b - Convert chars of word to uppercase from cursor
+

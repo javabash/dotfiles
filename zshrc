@@ -130,4 +130,13 @@ function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
 
+function tg() {
+  grep -i "$1" ~/.dotfiles/terminal_shortcuts.txt
+}
 
+function vg() {
+  grep -i "$1" ~/.dotfiles/vim_shortcuts.txt
+}
+function mg() {
+  grep -i "$1" ~/.dotfiles/mac_shortcuts.txt
+}
