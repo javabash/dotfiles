@@ -15,6 +15,8 @@ brew "figlet"
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Pager program similar to more
+brew "less"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Implementation of Telnet and SSH
