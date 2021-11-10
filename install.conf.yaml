@@ -6,10 +6,9 @@
 
 - link:
     ~/.zshrc: zshrc
+    ~/.zshenv: zshenv
     ~/.gitconfig: gitconfig
     ~/.config: config
-#    ~/.vim: vim
-#    ~/.vimrc: vimrc
 
 - create:
     - ~/Work

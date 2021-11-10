@@ -1,3 +1,4 @@
+echo "Executing .zshrc"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -135,8 +136,11 @@ function tg() {
 }
 
 function vg() {
-  grep -i "$1" ~/.dotfiles/vim_shortcuts.txt
+  grep -i --color=always "$1" ~/.dotfiles/vim_shortcuts.txt
 }
 function mg() {
   grep -i "$1" ~/.dotfiles/mac_shortcuts.txt
+}
+function exists() {
+  command -v $1 >/dev/null 2>&1
 }
