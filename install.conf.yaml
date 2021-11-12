@@ -9,6 +9,7 @@
     ~/.zshenv: zshenv
     ~/.gitconfig: gitconfig
     ~/.config: config
+    ~/.tmux.conf: tmux.conf
 
 - create:
     - ~/Work

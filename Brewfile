@@ -1,18 +1,27 @@
+tap "gnebbia/kb", "https://github.com/gnebbia/kb.git"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Create and view interactive cheat sheets for *nix commands
+brew "cheat"
 # Control Google Chrome from the command-line
 brew "chrome-cli"
 # Console Matrix
 brew "cmatrix"
+# Useful examples at the command-line
+brew "eg-examples"
 # Modern replacement for 'ls'
 brew "exa"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
 # Distributed revision control system
 brew "git"
+# Advanced HTML-to-text converter
+brew "html2text"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Pager program similar to more
@@ -25,6 +34,8 @@ brew "putty"
 brew "python@3.9"
 # Simplified and community-driven man pages
 brew "tldr"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Pager/text based browser
@@ -33,6 +44,8 @@ brew "w3m"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Minimalist knowledge base manager
+brew "gnebbia/kb/kb"
 # Application launcher and productivity software
 cask "alfred"
 # Client for the Dropbox cloud storage service

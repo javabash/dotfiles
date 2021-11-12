@@ -1,0 +1,310 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_D_e_v_h_i_n_t_s_._i_o
+    * _E_d_i_t
+************ VViimm cchheeaattsshheeeett ************
+
+_V_i_m is a very efficient text editor. This reference was made for Vim 8.0.
+For shortcut notation, see :help key-notation.
+********** GGeettttiinngg ssttaarrtteedd **********
+******** EExxiittiinngg ********
+SShhoorrttccuutt DDeessccrriippttiioonn
+:qa      Close all files
+:qa!     Close all files, abandon changes
+:w       Save
+:wq // :x Save and close file
+:q       Close file
+:q!      Close file, abandon changes
+ZZ       Save and quit
+ZQ       Quit without checking changes
+******** NNaavviiggaattiinngg ********
+SShhoorrttccuutt      DDeessccrriippttiioonn
+h j k l       Arrow keys
+<C-U> // <C-D> Half-page up/down
+<C-B> // <C-F> Page up/down
+****** WWoorrddss ******
+SShhoorrttccuutt DDeessccrriippttiioonn
+b // w    Previous/next word
+ge // e   Previous/next end of word
+****** LLiinnee ******
+SShhoorrttccuutt DDeessccrriippttiioonn
+0 ((zzeerroo)) Start of line
+^        Start of line ((aafftteerr wwhhiitteessppaaccee))
+$        End of line
+****** CChhaarraacctteerr ******
+fc Go forward to character c
+Fc Go backward to character c
+****** DDooccuummeenntt ******
+SShhoorrttccuutt DDeessccrriippttiioonn
+gg       First line
+G        Last line
+:n       Go to line n
+nG       Go to line n
+****** WWiinnddooww ******
+SShhoorrttccuutt DDeessccrriippttiioonn
+zz       Center this line
+zt       Top this line
+zb       Bottom this line
+H        Move to top of screen
+M        Move to middle of screen
+L        Move to bottom of screen
+****** SSeeaarrcchh ******
+SShhoorrttccuutt DDeessccrriippttiioonn
+n        Next matching search pattern
+N        Previous match
+*        Next whole word under cursor
+#        Previous whole word under cursor
+****** TTaabb ppaaggeess ******
+SShhoorrttccuutt        DDeessccrriippttiioonn
+:tabedit [file] Edit file in a new tab
+:tabfind [file] Open file if exists in new tab
+:tabclose       Close current tab
+:tabs           List all tabs
+:tabfirst       Go to first tab
+:tablast        Go to last tab
+:tabn           Go to next tab
+:tabp           Go to previous tab
+******** EEddiittiinngg ********
+SShhoorrttccuutt DDeessccrriippttiioonn
+a        Append
+A        Append from end of line
+i        Insert
+o        Next line
+O        Previous line
+s        Delete char and insert
+S        Delete line and insert
+C        Delete until end of line and insert
+r        Replace one character
+R        Enter Replace mode
+u        Undo changes
+<C-R>    Redo changes
+******** EExxiittiinngg iinnsseerrtt mmooddee ********
+SShhoorrttccuutt    DDeessccrriippttiioonn
+Esc // <C-[> Exit insert mode
+<C-C>       Exit insert mode, and abort current command
+******** CClliippbbooaarrdd ********
+SShhoorrttccuutt  DDeessccrriippttiioonn
+x         Delete character
+dd        Delete line ((CCuutt))
+yy        Yank line ((CCooppyy))
+p         Paste
+P         Paste before
+"*p // "+p Paste from system clipboard
+"*y // "+y Paste to system clipboard
+******** VViissuuaall mmooddee ********
+SShhoorrttccuutt DDeessccrriippttiioonn
+v        Enter visual mode
+V        Enter visual line mode
+<C-V>    Enter visual block mode
+****** IInn vviissuuaall mmooddee ******
+SShhoorrttccuutt DDeessccrriippttiioonn
+d // x    Delete selection
+s        Replace selection
+y        Yank selection ((CCooppyy))
+See _O_p_e_r_a_t_o_r_s for other things you can do.
+********** OOppeerraattoorrss **********
+******** UUssaaggee ********
+Operators let you operate in a range of text (defined by mmoottiioonn). These are
+performed in normal mode.
+d        w
+Operator Motion
+******** OOppeerraattoorrss lliisstt ********
+SShhoorrttccuutt DDeessccrriippttiioonn
+d        Delete
+y        Yank ((ccooppyy))
+c        Change ((ddeelleettee tthheenn iinnsseerrtt))
+>        Indent right
+<        Indent left
+=        Autoindent
+g~       Swap case
+gU       Uppercase
+gu       Lowercase
+!        Filter through external program
+See :help operator
+******** EExxaammpplleess ********
+Combine operators with mmoottiioonnss to use them.
+SShhoorrttccuutt           DDeessccrriippttiioonn
+ddd                 ((rreeppeeaatt tthhee lleetttteerr)) Delete current line
+dww                 Delete to next word
+dbb                 Delete to beginning of word
+22dd                Delete 2 lines
+diipp                Delete a text object ((iinnssiiddee ppaarraaggrraapphh))
+((iinn vviissuuaall mmooddee)) d Delete selection
+See: :help motion.txt
+********** TTeexxtt oobbjjeeccttss **********
+******** UUssaaggee ********
+Text objects let you operate (with an ooppeerraattoorr) in or around text blocks
+(oobbjjeeccttss).
+v        i                    p
+Operator [i]nside or [a]round Text object
+******** TTeexxtt oobbjjeeccttss ********
+SShhoorrttccuutt DDeessccrriippttiioonn
+p        Paragraph
+w        Word
+s        Sentence
+[ ( { <  A [], (), or {} block
+' " `    A quoted string
+b        A block [(
+B        A block in [{
+t        A XML tag block
+******** EExxaammpplleess ********
+SShhoorrttccuutt  DDeessccrriippttiioonn
+vip       Select paragraph
+vipipipip Select more
+yip       Yank inner paragraph
+yap       Yank paragraph (including newline)
+dip       Delete inner paragraph
+cip       Change inner paragraph
+See _O_p_e_r_a_t_o_r_s for other things you can do.
+******** DDiiffff ********
+SShhoorrttccuutt                     DDeessccrriippttiioonn
+gvimdiff file1 file2 [file3] See differences between files, in HMI
+********** MMiisscc **********
+******** FFoollddss ********
+SShhoorrttccuutt DDeessccrriippttiioonn
+zo // zO  Open
+zc // zC  Close
+za // zA  Toggle
+zv       Open folds for this line
+zM       Close all
+zR       Open all
+zm       Fold more ((ffoollddlleevveell ++== 11))
+zr       Fold less ((ffoollddlleevveell --== 11))
+zx       Update folds
+Uppercase ones are recursive (eg, zO is open recursively).
+******** NNaavviiggaattiioonn ********
+SShhoorrttccuutt DDeessccrriippttiioonn
+%        Nearest/matching {[()]}
+[( [{ [< Previous ( or { or <
+])       Next
+[m       Previous method start
+[M       Previous method end
+******** JJuummppiinngg ********
+SShhoorrttccuutt DDeessccrriippttiioonn
+<C-O>    Go back to previous location
+<C-I>    Go forward
+gf       Go to file in cursor
+******** CCoouunntteerrss ********
+SShhoorrttccuutt DDeessccrriippttiioonn
+<C-A>    Increment number
+<C-X>    Decrement
+******** WWiinnddoowwss ********
+z{height}<Cr> Resize pane to {height} lines tall
+******** TTaaggss ********
+SShhoorrttccuutt           DDeessccrriippttiioonn
+:tag Classname     Jump to first definition of Classname
+<C-]>              Jump to definition
+g]                 See all definitions
+<C-T>              Go back to last tag
+<C-O> <C-I>        Back/forward
+:tselect Classname Find definitions of Classname
+:tjump Classname   Find definitions of Classname (auto-select 1st)
+******** CCaassee ********
+SShhoorrttccuutt DDeessccrriippttiioonn
+~        Toggle case (Case => cASE)
+gU       Uppercase
+gu       Lowercase
+gUU      Uppercase current line (also gUgU)
+guu      Lowercase current line (also gugu)
+Do these in visual or normal mode.
+******** MMaarrkkss ********
+SShhoorrttccuutt  DDeessccrriippttiioonn
+`^        Last position of cursor in insert mode
+`.        Last change in current buffer
+`"        Last exited current buffer
+`0        In last file edited
+''        Back to line in current buffer where jumped from
+``        Back to position in current buffer where jumped from
+`[        To beginning of previously changed or yanked text
+`]        To end of previously changed or yanked text
+`<        To beginning of last visual selection
+`>        To end of last visual selection
+ma        Mark this cursor position as a
+`a        Jump to the cursor position a
+'a        Jump to the beginning of the line with position a
+d'a       Delete from current line to line of mark a
+d`a       Delete from current position to position of mark a
+c'a       Change text from current line to line of a
+y`a       Yank text from current position to position of a
+:marks    List all current marks
+:delm a   Delete mark a
+:delm a-d Delete marks a, b, c, d
+:delm abc Delete marks a, b, c
+******** MMiisscc ********
+SShhoorrttccuutt     DDeessccrriippttiioonn
+.            Repeat last command
+]p           Paste under the current indentation level
+:set ff=unix Convert Windows line endings to Unix line endings
+******** CCoommmmaanndd lliinnee ********
+SShhoorrttccuutt   DDeessccrriippttiioonn
+<C-R><C-W> Insert current word into the command line
+<C-R>"     Paste from â register
+<C-X><C-F> Auto-completion of path in insert mode
+******** TTeexxtt aalliiggnnmmeenntt ********
+:center [width]
+:right [width]
+:left
+See :help formatting
+******** CCaallccuullaattoorr ********
+SShhoorrttccuutt    DDeessccrriippttiioonn
+<C-R>=128/2 Shows the result of the division : â64â
+Do this in insert mode.
+******** EExxiittiinngg wwiitthh aann eerrrroorr ********
+:cq
+:cquit
+Works like :qa, but throws an error. Great for aborting Git commands.
+******** SSppeellll cchheecckkiinngg ********
+SShhoorrttccuutt                   DDeessccrriippttiioonn
+:set spell spelllang=en_us Turn on US English spell checking
+]s                         Move to next misspelled word after the cursor
+[s                         Move to previous misspelled word before the cursor
+z=                         Suggest spellings for the word under/after the
+                           cursor
+zg                         Add word to spell list
+zw                         Mark word as bad/mispelling
+zu / C-X (Insert Mode)     Suggest words for bad word under cursor from
+                           spellfile
+See :help spell
+********** AAllssoo sseeee **********
+    * _V_i_m_ _c_h_e_a_t_s_h_e_e_t ((vviimm..rroottrrrr..ccoomm))
+    * _V_i_m_ _d_o_c_u_m_e_n_t_a_t_i_o_n ((vviimmddoocc..ssoouurrcceeffoorrggee..nneett))
+    * _I_n_t_e_r_a_c_t_i_v_e_ _V_i_m_ _t_u_t_o_r_i_a_l ((ooppeennvviimm..ccoomm))
+  00 CCoommmmeennttss for this cheatsheet. Write yours!
+
+ devhints.io / [Unknown INPUT type]
+
+  _O_v_e_r_ _3_5_6_ _c_u_r_a_t_e_d_ _c_h_e_a_t_s_h_e_e_t_s_,_ _b_y_ _d_e_v_e_l_o_p_e_r_s_ _f_o_r_ _d_e_v_e_l_o_p_e_r_s_._ _ _ _D_e_v_h_i_n_t_s_ _h_o_m_e
+******** OOtthheerr VViimm cchheeaattsshheeeettss ********
+    * _VV_ii_mm_dd_ii_ff_ff_ _ _c_h_e_a_t_s_h_e_e_t_ _ 
+    * _VV_ii_mm_ _ss_cc_rr_ii_pp_tt_ii_nn_gg_ _ _c_h_e_a_t_s_h_e_e_t_ _ 
+    * _TT_aa_bb_uu_ll_aa_rr_ _ _c_h_e_a_t_s_h_e_e_t_ _ 
+    * _PP_rr_oo_jj_ee_cc_tt_ii_oo_nn_ii_ss_tt_ _ _c_h_e_a_t_s_h_e_e_t_ 
+    * _VV_ii_mm_ _dd_ii_gg_rr_aa_pp_hh_ss_ _ _c_h_e_a_t_s_h_e_e_t_ 
+    * _VV_ii_mm_ _EE_aa_ss_yy_aa_ll_ii_gg_nn_ _ _c_h_e_a_t_s_h_e_e_t_ 
+******** TToopp cchheeaattsshheeeettss ********
+    * _EE_ll_ii_xx_ii_rr_ _ _c_h_e_a_t_s_h_e_e_t_ _ 
+    * _EE_SS_22_00_11_55_++_ _ _c_h_e_a_t_s_h_e_e_t_ _ 
+    * _RR_ee_aa_cc_tt_.._jj_ss_ _ _c_h_e_a_t_s_h_e_e_t_ _ 
+    * _VV_ii_mm_dd_ii_ff_ff_ _ _c_h_e_a_t_s_h_e_e_t_ _ 
+    * _VV_ii_mm_ _ss_cc_rr_ii_pp_tt_ii_nn_gg_ _ _c_h_e_a_t_s_h_e_e_t_ _ 
+    * _VV_uu_ee_.._jj_ss_ _ _c_h_e_a_t_s_h_e_e_t_ _ 

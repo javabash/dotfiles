@@ -1,0 +1,45 @@
+ct< # Change text t(o) [01;31m[Kopen[m[K bracket.
+O = [01;31m[Kopen[m[K new line above current line
+o = [01;31m[Kopen[m[K new line below current line - drop into insert mode
+:e myfile	[01;31m[KOpen[m[Ks “myfile” for editing
+:bufdo /searchstr/	Search in all [01;31m[Kopen[m[K files globally
+bufdo %s/findme/replaceme/g	Search findme in all the [01;31m[Kopen[m[K buffers and replace it with replaceme
+Vim Commands given in the below table help us smoothly navigate within the [01;31m[Kopen[m[Ked file.
+:e .	[01;31m[KOpen[m[K the File Explorer
+:Sex	Split window and [01;31m[Kopen[m[K File Explorer
+:args *.php	[01;31m[KOpen[m[K file list with .php extension
+gf	[01;31m[KOpen[m[K file name under cursor
+Need to split the window into two? [01;31m[KOpen[m[K a new tab or work with multiple tabs? Yes, Vim supports it all, and has custom Vim commands for such interface-related operations.
+:tabnew	[01;31m[KOpen[m[Ks a new tab
+:tabm n(position)	Rearrange [01;31m[Kopen[m[K tabs
+:tab ball	Puts all [01;31m[Kopen[m[K files in different tabs
+:split myfile	Split the window and [01;31m[Kopen[m[K myfile
+:b 4	[01;31m[KOpen[m[K tab #4 in current window
+|<Help>|	<Help>		   [01;31m[Kopen[m[K a help window
+|CTRL-W_n|	CTRL-W n	   [01;31m[Kopen[m[K new window, N lines high
+|[z|		[z		1  move to start of [01;31m[Kopen[m[K fold
+|]z|		]z		1  move to end of [01;31m[Kopen[m[K fold
+|zA|		zA		   [01;31m[Kopen[m[K a closed fold or close an [01;31m[Kopen[m[K fold
+|zO|		zO		   [01;31m[Kopen[m[K folds recursively
+|za|		za		   [01;31m[Kopen[m[K a closed fold, close an [01;31m[Kopen[m[K fold
+|zo|		zo		   [01;31m[Kopen[m[K fold
+|zv|		zv		   [01;31m[Kopen[m[K enough folds to view the cursor line
+|'cedit'|	CTRL-F		default value for 'cedit': [01;31m[Kopen[m[Ks the
+|:all|		:al[l]		[01;31m[Kopen[m[K a window for each file in the argument
+|:ball|		:ba[ll]		[01;31m[Kopen[m[K a window for each buffer in the buffer list
+|:c[01;31m[Kopen[m[K|	:cope[n]	[01;31m[Kopen[m[K quickfix window
+|:cwindow|	:cw[indow]	[01;31m[Kopen[m[K or close quickfix window
+|:folddo[01;31m[Kopen[m[K|	:foldd[o[01;31m[Kopen[m[K]	execute command on lines not in a closed fold
+|:fold[01;31m[Kopen[m[K|	:foldo[pen]	[01;31m[Kopen[m[K folds
+|:help|		:h[elp]		[01;31m[Kopen[m[K a help window
+|:helpfind|	:helpf[ind]	dialog to [01;31m[Kopen[m[K a help window
+|:l[01;31m[Kopen[m[K|	:lope[n]	[01;31m[Kopen[m[K location window
+|:lwindow|	:lw[indow]	[01;31m[Kopen[m[K or close location window
+|:[01;31m[Kopen[m[K|		:o[pen]		start [01;31m[Kopen[m[K mode (not implemented)
+|:options|	:opt[ions]	[01;31m[Kopen[m[K the options-window
+|:promptfind|	:pro[mptfind]	[01;31m[Kopen[m[K GUI dialog for searching
+|:promptrepl|	:promptr[epl]	[01;31m[Kopen[m[K GUI dialog for search/replace
+|:sall|		:sal[l]		[01;31m[Kopen[m[K a window for each file in argument list
+|:sball|	:sba[ll]	[01;31m[Kopen[m[K a window for each file in the buffer list
+|:tab|		:tab		create new tab when [01;31m[Kopen[m[King new window
+|:unhide|	:unh[ide]	[01;31m[Kopen[m[K a window for each loaded file in the
