@@ -2,6 +2,8 @@ tap "gnebbia/kb", "https://github.com/gnebbia/kb.git"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+# Shell extension to jump to frequently used directories
+brew "autojump"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Create and view interactive cheat sheets for *nix commands
@@ -10,6 +12,8 @@ brew "cheat"
 brew "chrome-cli"
 # Console Matrix
 brew "cmatrix"
+# Converts Microsoft Office docx documents to equivalent text documents
+brew "docx2txt"
 # Useful examples at the command-line
 brew "eg-examples"
 # Modern replacement for 'ls'
@@ -18,6 +22,8 @@ brew "exa"
 brew "fd"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # Distributed revision control system
 brew "git"
 # Advanced HTML-to-text converter
@@ -26,6 +32,8 @@ brew "html2text"
 brew "httpie"
 # Pager program similar to more
 brew "less"
+# Input filter for the pager less
+brew "lesspipe"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Implementation of Telnet and SSH
@@ -42,6 +50,8 @@ brew "tree"
 brew "w3m"
 # Internet file retriever
 brew "wget"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Minimalist knowledge base manager

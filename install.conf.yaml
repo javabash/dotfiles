@@ -6,6 +6,7 @@
 
 - link:
     ~/.zshrc: zshrc
+    ~/.oh-my-zsh: oh-my-zsh
     ~/.zshenv: zshenv
     ~/.gitconfig: gitconfig
     ~/.config: config
