@@ -11,6 +11,7 @@
     ~/.gitconfig: gitconfig
     ~/.config: config
     ~/.tmux.conf: tmux.conf
+    ~/.ansiweatherrc: ansiweatherrc
 
 - create:
     - ~/Work

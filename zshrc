@@ -113,6 +113,15 @@ $fg_bold[blue]%1~$fg_bold[green]%} %L %# '
 plugins=( 
     zsh-autosuggestions
     git
+    web-search
+    sudo
+    macos
+    copydir
+    copyfile
+    copybuffer
+    dirhistory
+    history
+    jsontools
 )
 
 source $ZSH/oh-my-zsh.sh

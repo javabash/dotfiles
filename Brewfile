@@ -2,6 +2,8 @@ tap "gnebbia/kb", "https://github.com/gnebbia/kb.git"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+# Weather in your terminal, with ANSI colors and Unicode symbols
+brew "ansiweather"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Clone of cat(1) with syntax highlighting and Git integration
